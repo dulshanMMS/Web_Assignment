@@ -17,13 +17,23 @@
             }
             #header_free_shipping{
                 display: flex;
-                justify-items: center
+                justify-items: center;
+                font-family: sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                
             }
 
-            .links_without_underline {
+            #header_font {
                 text-decoration: none;
                 color: #D6D6D6;
                 font-family: sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            #to_ma {
+                padding-left: 30px;
             }
 
         </style>
@@ -31,9 +41,9 @@
 
     <body>
         <header>
-            <div>
-                <a href="" class="links_without_underline">Track Order</a>
-                <a href="" class="links_without_underline">My Account</a>
+            <div id="to_ma">
+                <a href=""  id="header_font">Track Order |</a>
+                <a href=""  id="header_font">My Account</a>
             </div>
 
             <div id="header_free_shipping">
@@ -41,7 +51,7 @@
             </div>
 
             <div>
-                <a href="" class="links_without_underline">Newsletter</a>
+                <a href="" id="header_font">Newsletter</a>
             </div>
         </header>
     </body>
