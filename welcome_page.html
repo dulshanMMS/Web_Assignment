@@ -4,26 +4,44 @@
 
         <style>
 
+            body {
+                margin: 0;
+            }
+
             header{
                 background-color: black;
                 color: white;
-                padding: 20px;
+                padding: 10px;
                 display: flex;
                 justify-content: space-between;
             }
+            #header_free_shipping{
+                display: flex;
+                justify-items: center
+            }
+
+            .links_without_underline {
+                text-decoration: none;
+                color: #D6D6D6;
+                font-family: sans-serif;
+            }
+
         </style>
     </head>
 
     <body>
         <header>
             <div>
-                <a href="">Track Order</a>
-                <a href="">My Account</a>
+                <a href="" class="links_without_underline">Track Order</a>
+                <a href="" class="links_without_underline">My Account</a>
+            </div>
+
+            <div id="header_free_shipping">
+                <span>Free Shipping Above Rs. 599.00</span>
             </div>
 
             <div>
-                <span>Free Shipping Above Rs. 599.00</span>
-                <a href="">Newsletter</a>
+                <a href="" class="links_without_underline">Newsletter</a>
             </div>
         </header>
     </body>
