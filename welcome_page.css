@@ -62,3 +62,9 @@
                 list-style-type: none;
             }
 
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                padding-bottom: 15px;
+            }
+
