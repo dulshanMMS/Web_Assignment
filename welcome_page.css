@@ -1,6 +1,7 @@
             body {
                 margin: 0;
                 overflow: auto;
+                background-color:#E9E7E6;
             }
 
             header {
@@ -86,7 +87,7 @@
                 /* position: fixed;   meka ain kale item pic eka udin side nav eka apu nisa */
                 
                 z-index: 1;
-                background: #fffefef0;
+                background: #E9E7E6;
                 overflow-x: hidden;
                 padding-left: 10px;
                 padding: 8px 0;
@@ -132,11 +133,13 @@
                 position: relative;
                 text-align: center;
                 color: white;
+                width: 100%;
                 
             }
 
             .container img { 
                 height:360px ;
+                
             }
 
             .centered {
