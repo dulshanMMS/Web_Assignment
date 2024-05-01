@@ -83,11 +83,16 @@ header {
 }
 
 .sidenav {
+<<<<<<< HEAD
     width: 300px;
+=======
+    width: 500px;
+>>>>>>> 376a1cb1a090bb8141c9883d70f8ce080aad272a
     /* position: fixed;   meka ain kale item pic eka udin side nav eka apu nisa */
     
     z-index: 1;
     background: #E9E7E6;
+<<<<<<< HEAD
     overflow-x: hidden;
     padding-left: 10px;
     padding: 8px 0;
@@ -95,6 +100,16 @@ header {
 }
 
 .sidenav a {
+=======
+   
+    padding: 8px ;
+    padding-right: 100px;
+    /*overflow: auto; meka ain kle mt ona hinda*/
+}
+
+.sidenav a {
+    width: 200px;
+>>>>>>> 376a1cb1a090bb8141c9883d70f8ce080aad272a
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
@@ -171,6 +186,7 @@ select#sort-by {
     color: #333; 
     
  }
+<<<<<<< HEAD
 
 
 select#sort-by option {
@@ -219,4 +235,54 @@ select#sort-by:hover {
     text-decoration: none;
     text-align: left;
 }
+=======
+>>>>>>> 376a1cb1a090bb8141c9883d70f8ce080aad272a
 
+
+select#sort-by option {
+    padding: 5px 10px; 
+    background-color: #fff; 
+    color: #333; 
+}
+
+
+select#sort-by:hover {
+    border-color:#888; /* Change border color on hover */
+}
+
+
+
+.image-and-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border 2s ease;
+    margin: 10px;
+    
+}
+
+.image-and-description:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.image-and-description img {
+    border-radius: 10px;
+}
+
+.image-and-description button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.item_name {
+    text-decoration: none;
+    text-align: left;
+}

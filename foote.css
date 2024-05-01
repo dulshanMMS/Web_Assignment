@@ -24,6 +24,7 @@ ul{
  .footer{
     background-color: #24262b;
     padding: 70px 0;
+    max-height: 2000px;
     
  }
  .footer-col{
@@ -37,6 +38,7 @@ ul{
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
+    text-align: left;
     
  }
  .footer-col h4::before{
@@ -61,6 +63,7 @@ ul{
    color: #bbbbbb;
    display: block;
    transition: all 0.3s ease;
+   text-align: left;
  }
 
 /* Element tika hover krn ekaa  */
@@ -78,7 +81,6 @@ ul{
    width: 40px;
    background-color: rgba(255,255,255,0.2);
    margin: 0 10px 10px 0;
-   text-align: center;
    line-height: 40px;
    border-radius: 50%;
    color: #ffffff;
@@ -105,3 +107,5 @@ ul{
       
    }
  }
+
+
