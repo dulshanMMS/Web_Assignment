@@ -55,6 +55,10 @@
                 transition: max-height 0.5s, opacity 0.5s linear;
             }
 
+            .dropdown:hover {
+                color: rgb(0, 0, 0);
+            }
+
             .dropdown:hover .dropdown_content {
                 max-height: 200px;
                 opacity: 1;
@@ -73,11 +77,14 @@
                 position: relative;
                 display: inline-block;
                 padding-bottom: 15px;
+                color: gray;
+                transition: color 0.5s ease;
             }
 
             .sidenav {
                 width: 300px;
-                position: fixed;
+                /* position: fixed;   meka ain kale item pic eka udin side nav eka apu nisa */
+                
                 z-index: 1;
                 background: #fffefef0;
                 overflow-x: hidden;
@@ -105,6 +112,51 @@
             }
 
             #main_div {
+                
                 padding-left: 60px;
                 padding-right: 60px;
+            }
+
+            #content {
+                display: flex;
+            }
+            
+            .image-container {
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+            }
+
+            .image-and-description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: left;
+                transition: transform 0.5s ease, box-shadow 0.5s ease, border 2s ease;
+                
+            }
+
+            .image-and-description:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+
+            .image-and-description img {
+                border-radius: 10px;
+            }
+
+            .image-and-description button {
+                padding: 10px 20px;
+                margin-top: 10px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            
+
+
+            .item_name {
+                text-decoration: none;
+                text-align: left;
             }
