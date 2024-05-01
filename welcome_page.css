@@ -62,6 +62,12 @@
                 list-style-type: none;
             }
 
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                padding-bottom: 15px;
+
             .sidenav {
                 width: 300px;
                 position: fixed;
@@ -82,5 +88,6 @@
               
             .sidenav a:hover {
                 color: #262727;
+
             }
 
