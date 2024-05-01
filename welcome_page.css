@@ -127,6 +127,62 @@
                 align-items: center;
             }
 
+
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+                
+            }
+
+            .container img { 
+                height:360px ;
+            }
+
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+              }
+
+            .sorting{
+                float: right;
+                padding-right:60px;
+            }
+
+            #line gray{
+                color: #888;
+            }
+            
+            
+            select#sort-by {
+                background-color:white; 
+                border: 1px solid #ccc; 
+                border-radius: 4px;
+                padding: 5px 10px; 
+                font-size: 16px; 
+                cursor: pointer;
+                color: #333; 
+                
+             }
+  
+  
+            select#sort-by option {
+                padding: 5px 10px; 
+                background-color: #fff; 
+                color: #333; 
+            }
+  
+  
+            select#sort-by:hover {
+                border-color:#888; /* Change border color on hover */
+            }
+  
+
+ 
             .image-and-description {
                 display: flex;
                 flex-direction: column;
@@ -160,3 +216,4 @@
                 text-decoration: none;
                 text-align: left;
             }
+
