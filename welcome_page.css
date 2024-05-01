@@ -62,9 +62,32 @@
                 list-style-type: none;
             }
 
+
             .dropdown {
                 position: relative;
                 display: inline-block;
                 padding-bottom: 15px;
+
+            .sidenav {
+                width: 300px;
+                position: fixed;
+                z-index: 1;
+                background: #fffefef0;
+                overflow-x: hidden;
+                padding-left: 10px;
+                padding: 8px 0;
+            }
+
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #6e7071;
+                display: block;
+            }
+              
+            .sidenav a:hover {
+                color: #262727;
+
             }
 
