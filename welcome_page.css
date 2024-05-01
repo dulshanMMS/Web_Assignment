@@ -1,0 +1,64 @@
+            body {
+                margin: 0;
+            }
+
+            header{
+                background-color: black;
+                color: white;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+            #header_free_shipping{
+                display: flex;
+                justify-items: center;
+                font-family: sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                
+            }
+
+            #header_font {
+                text-decoration: none;
+                color: #D6D6D6;
+                font-family: sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            #to_ma {
+                padding-left: 30px;
+            }
+
+            #logo_div {
+                display: flex;
+                align-items: center;
+                gap: 70px;
+            }
+
+            #logo_div img {
+                height: 150px;
+            }
+
+            .dropdown_content{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                min-width: 160px;
+                
+            }
+
+            .dropdown:hover .dropdown_content {
+                display: block;
+            }
+
+            .dropdown_content li {
+                padding: 10px;
+                border-bottom: 1px solid black;
+            }
+
+            .dropdown_content {
+                list-style-type: none;
+            }
+
