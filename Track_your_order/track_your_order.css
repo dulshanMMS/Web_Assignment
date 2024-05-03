@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(228, 230, 233);
+    margin: 0px;
+}
+
+#logo_bar{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo_bar img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tracking{
+    border-radius: 25px;
+    background: white;
+    padding: 20px; 
+    width: fit-content;
+    height: fit-content;  
+    margin: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    font-size: 20px;
+}
+
+#selection{
+    display: inline-block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 200px 10px 20px;
+    border: 1px solid #b5b3b3;
+    border-radius: 4px;
+    height: 40px;
+    font-size: large;
+}
+
+button{
+    background-color: #444fe9;
+    color: #fff;
+    padding: 20px 100px 20px 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.hr{
+    width: fit-content;
+}
+
+footer{
+    background-color: white;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: large;
+    color: #787575;
+}
