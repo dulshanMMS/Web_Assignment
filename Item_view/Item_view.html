@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="page01.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const decreaseButton = document.getElementById('decrease');
+            const increaseButton = document.getElementById('increase');
+            const valueDisplay = document.getElementById('value');
 
+            decreaseButton.addEventListener('click', function() {
+                let currentValue = parseInt(valueDisplay.textContent);
+                if (currentValue > 0) {
+                    valueDisplay.textContent = currentValue - 1;
+                }
+            });
+
+            increaseButton.addEventListener('click', function() {
+                valueDisplay.textContent = parseInt(valueDisplay.textContent) + 1;
+            });
+        });
+
+
+        function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function enlargeImage(img) {
+  // Get the large image container and image elements
+  var largeImageContainer = document.getElementById("largeImageContainer");
+  var largeImage = document.getElementById("largeImage");
+
+  // Set the source of the large image to the clicked thumbnail's source
+  largeImage.src = img.src;
+
+  // Display the large image container
+  largeImageContainer.style.display = "block";
+}
+
+// Optional: Function to close the enlarged image view
+function closeEnlargedView() {
+  var largeImageContainer = document.getElementById("largeImageContainer");
+  largeImageContainer.style.display = "none";
+}
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <div id="cont0">
+            <div id="sub1"><img src="01-1.jpg" class="img-thumbnail" onclick="enlargeImage(this);"></div>
+            <div id="sub2"><img src="01-2.jpg" class="img-thumbnail" onclick="enlargeImage(this);"></div>
+            
+
+        </div>
+        <div class="cont1" id="largeImageContainer">
+           <img src="satrangi-595x655.jpg" class="large-image" id="largeImage">
+        </div>
+        <div id="cont2">
+            <div id="spe1">
+                <h2>Satrangi Homemade Rakhi</h2>
+            </div>
+            <div id="spe2">
+                <h3>₹49.00</h3>
+            </div>
+            <div id="spe3">
+                <div id="counter">
+                    <button class="btn" id="decrease">-</button>
+                    <span id="value">0</span>
+                    <button class="btn" id="increase">+</button>
+                    <button class="addtocrt" type="submit" name="Add to cart" >ADD TO CART</button>
+                    <button class="addtocrt" type="submit" name="Add to cart" >BUY IT NOW</button>
+                </div>
+
+            </div>
+            
+            <div id="spe4">
+                <img src="Untitled.png"class="icon1" >
+                
+            </div>
+            <div id="spe5">
+                <p id="para1">FREE DELIVERY ABOVE Rs. 599<br>International shipment of items may be subject to customs processing and additional charges.
+                This item has an extended handling time and a delivery estimate greater than 21 business days.
+                </p>
+                <p id="para2">SECURE PAYMENT GATEWAY & COD<br>30 days returns. Buyer pays for return shipping</p>
+                <p id="para3">24 X 7 WHATSAPP SUPPORT</p>
+                
+            </div>
+            <div id="spe6">
+                <p id="para4">Category: Band New</p>
+                <p>Tags: handmade ,jewellary ,neckless</p>
+                <p><b>Made in SRI LANKA.</b></p>
+            </div>
+            
+        
+            
+        </div>
+        <div id="spe7">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Description')">Description</button>
+                <button class="tablinks" onclick="openTab(event, 'AdditionalInfo')">Additional Information</button>
+                <button class="tablinks" onclick="openTab(event, 'Reviews')">Reviews</button>
+              </div>
+              
+              <div id="Description" class="tabcontent">
+                <h3>Description</h3>
+                <p><ul>
+                    <li>1 PC Rakhi</li>
+                    <li>Free Kumkum, Chawal</li>
+                    <li>Contact Us through Whatsapp for more customisation and rakhi designs of your choice</li>
+                    <li></li>
+                </ul></p>
+              </div>
+              
+              <div id="AdditionalInfo" class="tabcontent">
+                <h3>Additional Information</h3>
+                <p>Here you can provide any additional details about the product.</p>
+              </div>
+              
+              <div id="Reviews" class="tabcontent">
+                <h3>Reviews</h3>
+                <p>There are no reviews yet.<br><br>Only logged in customers who have purchased this product may leave a review.
+
+                </p>
+              </div>
+        
+        
+        
+
+    </div>
+    </div>
+    
+</body>
+</html>
